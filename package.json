@@ -1,28 +1,33 @@
 {
-  "name": "calculator",
+  "name": "npm",
   "version": "1.0.0",
-  "description": "My project",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Strong2045/calculator.git"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server --open",
+    "pretty": "prettier --check \"src/**/*.js\"",
+    "lint": "eslint ./src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Strong2045/calculator/issues"
-  },
-  "homepage": "https://github.com/Strong2045/calculator#readme",
   "devDependencies": {
-    "eslint": "^6.1.0",
-    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.20.1",
-    "webpack": "^4.41.6",
-    "webpack-cli": "^3.3.11"
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.19.0",
+    "eslint-plugin-react-hooks": "^2.5.0",
+    "prettier": "2.0.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
   },
-  "dependencies": {}
+  "dependencies": {
+    "webpack-dev-server": "^3.11.0"
+  }
 }
